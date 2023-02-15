@@ -1,0 +1,5 @@
+.InputLine::after {
+  content: '\258C';
+  display: inline-block;
+  animation: blink 0.995s step-end infinite;
+}

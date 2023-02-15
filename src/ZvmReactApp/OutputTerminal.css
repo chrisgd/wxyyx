@@ -1,0 +1,100 @@
+.TerminalWindow {
+  margin-top: 0.5em;
+  margin-left: 1em;
+  /* height: 40vh; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.OutputTerminalWindow {
+  background-color: blanchedalmond;
+  /* padding: .5em;*/
+  margin: 0.2em;
+  border-width: 2px 2px 2px 2px;
+  border-radius: 1em;
+  border-color: blanchedalmond;
+  border-style: solid;
+  font-family: 'Lato', 'Roboto', 'Open Sans', 'Segoe UI', Tahoma, Geneva,
+    Verdana, sans-serif;
+  text-align: left;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.OutputTerminalWindow:focus {
+  border-style: none;
+  outline-style: none;
+  outline-width: 0;
+}
+
+.NewTerminalWindow:focus {
+  border-style: none;
+  outline-style: none;
+  outline-width: 0;
+}
+
+.OutputTerminalWindow h1 {
+  text-align: left;
+  padding: 0em;
+  margin: 0em;
+}
+
+.ScrollingWindow {
+  background-color: blanchedalmond;
+  padding: 0.5em;
+  margin: 0.2em;
+  font-family: 'Lato', 'Roboto', 'Open Sans', 'Segoe UI', Tahoma, Geneva,
+    Verdana, sans-serif;
+  text-align: left;
+  resize: none;
+  min-width: 100%;
+  height: 100%;
+  /* height: 50vw; */
+  border-style: none;
+}
+
+.ScrollingWindow:focus {
+  border-style: none;
+  outline-style: none;
+  outline-width: 0;
+}
+
+.InputTerminalWindow {
+  background-color: paleturquoise;
+  padding: 0.5em;
+  margin: 0.2em;
+  border-style: solid;
+  border-color: paleturquoise;
+  border-radius: 1em;
+  border-width: 2px 2px 2px 2px;
+}
+
+.InputTerminalWindow input:focus {
+  outline-width: 0;
+}
+
+.StatusLine {
+  margin: 0.2em;
+  /* padding-left: 1em; 
+    padding-right: 1em; */
+  background-color: white;
+  border-width: 2px;
+  /* border-style: solid;
+    border-color: black; */
+  border-radius: 1em;
+  text-align: left;
+  font-weight: bold;
+  font-size: small;
+}
+
+.RightMargin {
+  margin-right: 2em;
+}
+
+.InputArea {
+  width: 90%;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,52 @@
+/* the main key here is having a scrolling overflow, so we
+   get terminal-like behavior */
+.Terminal {
+  overflow: scroll;
+  background-color: aquamarine;
+  /* needed to preserve whitespace but still wrap, can be switched for other behaviors */
+  white-space: pre-wrap;
+  font-weight: bold;
+}
+
+.NewTerminal {
+  border-width: 2px 2px 2px 2px;
+  border-radius: 1em;
+  border-color: blanchedalmond;
+  overflow: visible;
+  font-family: 'Lato', 'Roboto', 'Open Sans', 'Segoe UI', Tahoma, Geneva,
+    Verdana, sans-serif;
+  background-color: blanchedalmond;
+  /* needed to preserve whitespace but still wrap, can be switched for other behaviors */
+  white-space: pre-wrap;
+  /* border-width: 1px;
+    border-style: solid; */
+  padding: 0.5em;
+}
+
+.NewTerminal:focus {
+  border-style: none;
+  outline-style: none;
+  outline-width: 0;
+}
+
+.Cursor {
+  color: black;
+  display: inline-block;
+  animation: blink 0.995s step-end infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
